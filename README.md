@@ -23,18 +23,20 @@ Design, ou no conversor.
 Os arquivos `assets/styles.css`, `assets/main.js` e `assets/site-config.js`
 são da versão anterior do site e não são mais carregados por nenhuma página.
 
+Origem e licença de cada imagem: `ASSET_MANIFEST.md`.
+
 ## Pendente antes de publicar de verdade
 
-1. **As 4 fotos dos capítulos do catálogo** (Facial, Corporal, Depilación y
-   cuidado íntimo, Lesiones de piel) — hoje aparecem como moldura "Foto
-   pendiente" com a legenda do que fotografar. O export do Claude Design tinha
-   preenchido esses espaços com pré-visualizações de banco de imagens em
-   servidor externo: não foram publicadas porque a licença não está confirmada
-   e o site não pode depender de terceiros. Fotos próprias, sem pessoas.
-2. Número de registro profissional e razão social — hoje marcados como
+1. **Revisão das imagens com a Dra. Rocío** — as 7 fotos são de banco
+   (licenciadas), não da clínica. Duas merecem uma segunda olhada dela,
+   detalhadas no `ASSET_MANIFEST.md`. Trocar por fotos próprias continua sendo
+   o melhor caminho quando houver.
+2. **Foto real da recepção** — existe no projeto do Claude Design mas não foi
+   possível baixá-la; a seção "La clínica" segue com a foto de ambiente.
+3. Número de registro profissional e razão social — hoje marcados como
    "a completar antes de la publicación" no aviso legal. Não podem ser
    inventados.
-3. Formação e trajetória da Dra. Rocío.
-4. Horários de atendimento (hoje consta apenas "con cita previa").
-5. Decisão de nome: MED DermoEstética ou DERMOCLÍNICA.
-6. Domínio próprio em nome da clínica, e remover o `noindex` só no lançamento.
+4. Formação e trajetória da Dra. Rocío.
+5. Horários de atendimento (hoje consta apenas "con cita previa").
+6. Decisão de nome: MED DermoEstética ou DERMOCLÍNICA.
+7. Domínio próprio em nome da clínica, e remover o `noindex` só no lançamento.
