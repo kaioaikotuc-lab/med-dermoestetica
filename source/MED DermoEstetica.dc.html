@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>MED DermoEstética — Cuidado estético con mirada clínica</title>
+<meta name="description" content="MED DermoEstética. Tratamientos estéticos con protocolo clínico, privacidad y atención profesional en Ciudad del Este. Agendá tu evaluación.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script src="./image-slot.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"MED DermoEstética","description":"Tratamientos faciales y corporales con atención personalizada.","telephone":"+595982879555","address":{"@type":"PostalAddress","streetAddress":"Av. Las Tórtolas, km 4","addressLocality":"Ciudad del Este","addressCountry":"PY"},"sameAs":["https://www.instagram.com/meddermoestetica/"],"availableLanguage":"es"}
+</script>
+<style>
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:300 700;font-display:swap;src:url("assets/fonts/cormorant-garamond-latin.woff2") format("woff2");}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:300 700;font-display:swap;src:url("assets/fonts/cormorant-garamond-italic-latin.woff2") format("woff2");}
+@font-face{font-family:"Karla";font-style:normal;font-weight:300 700;font-display:swap;src:url("assets/fonts/karla-latin.woff2") format("woff2");}
+body{margin:0;-webkit-font-smoothing:antialiased;background:#FDFBF8;}
+a{color:#8A5E44;}
+a:hover{color:#9C716E;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}}
+details summary{list-style:none}
+details summary::-webkit-details-marker{display:none}
+.faq-vert{transform:rotate(0deg)}
+details[open] .faq-vert{transform:rotate(90deg)}
+</style>
+</helmet>
+
+<div style="font-family:'Karla',system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.75;color:#2E2622;background:#FDFBF8;letter-spacing:.005em;overflow-x:hidden;">
+
+  <a href="#contenido" style="position:absolute;left:-9999px;top:0;z-index:999;background:#241D1A;color:#FDFBF8;padding:.75rem 1.25rem;font-size:.875rem;text-decoration:none;" style-focus="left:.5rem;top:.5rem;">Ir al contenido</a>
+
+  <header style="position:fixed;top:0;left:0;right:0;z-index:500;background:rgba(253,251,248,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(46,38,34,.07);">
+    <div style="max-width:1180px;margin-inline:auto;padding:1.1rem clamp(1.25rem,5vw,4rem);display:flex;align-items:center;gap:2rem;">
+      <a href="#inicio" style="display:flex;align-items:center;gap:.7rem;text-decoration:none;margin-right:auto;color:#2E2622;">
+        <span style="width:2.4rem;height:2.4rem;flex:none;display:grid;place-items:center;border:1px solid #C2A878;border-radius:50%;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.15rem;color:#8A5E44;">M</span>
+        <span style="display:flex;flex-direction:column;line-height:1;">
+          <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.3rem;letter-spacing:.08em;">MED</span>
+          <span style="font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:#6B5F58;margin-top:.25rem;">DermoEstética</span>
+        </span>
+      </a>
+
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button type="button" aria-label="Abrir menú" aria-controls="menu-movil" onClick="{{ toggleMenu }}" style="width:2.5rem;height:2.5rem;background:none;border:0;cursor:pointer;display:flex;flex-direction:column;justify-content:center;gap:.4rem;padding:0;">
+          <span aria-hidden="true" style="display:block;width:1.4rem;height:1px;background:#2E2622;"></span>
+          <span aria-hidden="true" style="display:block;width:1.4rem;height:1px;background:#2E2622;"></span>
+        </button>
+      </sc-if>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <nav aria-label="Navegación principal">
+          <ul style="display:flex;gap:1.6rem;list-style:none;margin:0;padding:0;white-space:nowrap;">
+            <li><a href="#filosofia" style="font-size:.82rem;letter-spacing:.06em;text-decoration:none;color:#5A4E47;">La atención</a></li>
+            <li><a href="#tratamientos" style="font-size:.82rem;letter-spacing:.06em;text-decoration:none;color:#5A4E47;">Tratamientos</a></li>
+            <li><a href="#clinica" style="font-size:.82rem;letter-spacing:.06em;text-decoration:none;color:#5A4E47;">La clínica</a></li>
+            <li><a href="#preguntas" style="font-size:.82rem;letter-spacing:.06em;text-decoration:none;color:#5A4E47;">Preguntas</a></li>
+            <li><a href="#contacto" style="font-size:.82rem;letter-spacing:.06em;text-decoration:none;color:#5A4E47;">Contacto</a></li>
+          </ul>
+        </nav>
+        <a href="https://wa.me/595982879555?text=Hola%2C%20quisiera%20agendar%20una%20evaluaci%C3%B3n." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;padding:.7rem 1.35rem;font-family:'Karla',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#2E2622;border:1px solid rgba(46,38,34,.16);border-radius:999px;">Escribinos</a>
+      </sc-if>
+    </div>
+
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div id="menu-movil" style="padding:1rem clamp(1.25rem,5vw,4rem) 2.5rem;background:rgba(253,251,248,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid #F0E7DC;">
+        <ul style="list-style:none;margin:0 0 1.75rem;padding:0;">
+          <li style="border-top:1px solid #F0E7DC;"><a href="#filosofia" onClick="{{ closeMenu }}" style="display:block;padding:.95rem 0;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;text-decoration:none;color:#2E2622;">La atención</a></li>
+          <li style="border-top:1px solid #F0E7DC;"><a href="#tratamientos" onClick="{{ closeMenu }}" style="display:block;padding:.95rem 0;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;text-decoration:none;color:#2E2622;">Tratamientos</a></li>
+          <li style="border-top:1px solid #F0E7DC;"><a href="#clinica" onClick="{{ closeMenu }}" style="display:block;padding:.95rem 0;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;text-decoration:none;color:#2E2622;">La clínica</a></li>
+          <li style="border-top:1px solid #F0E7DC;"><a href="#preguntas" onClick="{{ closeMenu }}" style="display:block;padding:.95rem 0;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;text-decoration:none;color:#2E2622;">Preguntas</a></li>
+          <li style="border-top:1px solid #F0E7DC;"><a href="#contacto" onClick="{{ closeMenu }}" style="display:block;padding:.95rem 0;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;text-decoration:none;color:#2E2622;">Contacto</a></li>
+        </ul>
+        <a href="https://wa.me/595982879555?text=Hola%2C%20quisiera%20agendar%20una%20evaluaci%C3%B3n." target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;width:100%;padding:.95rem 1.9rem;font-family:'Karla',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#FDFBF8;background:#8A5E44;border-radius:999px;">Escribinos al WhatsApp</a>
+      </div>
+    </sc-if>
+  </header>
+
+  <main id="contenido">
+
+    <section id="inicio" style="background:linear-gradient(160deg,#FDFBF8 0%,#F8F2EA 55%,#F0E7DC 100%);padding:9rem clamp(1.25rem,5vw,4rem) clamp(4rem,7vw,6rem);">
+      <div style="max-width:1180px;margin-inline:auto;display:grid;gap:clamp(2.5rem,5vw,4.5rem);grid-template-columns:repeat(auto-fit,minmax(320px,1fr));align-items:center;">
+        <div style="animation:fadeUp 900ms cubic-bezier(.22,.61,.36,1) both;">
+          <p style="font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:#8A5E44;margin:0 0 1.25rem;">Dermoestética</p>
+          <h1 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;line-height:1.06;letter-spacing:-.015em;font-size:clamp(2.9rem,1.9rem + 3.6vw,5.2rem);margin:0;">Cuidado estético<br/>con <em style="font-style:italic;color:#8A5E44;">mirada clínica</em></h1>
+          <div aria-hidden="true" style="width:3.5rem;height:1px;background:linear-gradient(90deg,#C2A878,rgba(194,168,120,0));margin:1.75rem 0 1.9rem;"></div>
+          <p style="font-size:clamp(1.05rem,1rem + .35vw,1.25rem);color:#5A4E47;max-width:42ch;margin:0 0 1.15em;">Un espacio donde la discreción, la higiene y el criterio profesional vienen antes que cualquier promesa.</p>
+          <div style="margin-top:2.5rem;">
+            <a href="https://wa.me/595982879555?text=Hola%2C%20quisiera%20agendar%20una%20evaluaci%C3%B3n." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:.95rem 1.9rem;font-family:'Karla',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#FDFBF8;background:#8A5E44;border-radius:999px;">Agendá tu evaluación</a>
+          </div>
+        </div>
+        <div style="position:relative;aspect-ratio:4/5;border:1px solid #E4D7C8;overflow:hidden;">
+          <image-slot id="hero-bg" shape="rect" src="assets/images/hero-clinica.jpg" fit="cover" placeholder="Foto ambiente de la clínica — sin personas"></image-slot>
+          <div aria-hidden="true" style="position:absolute;inset:.85rem;border:1px solid rgba(194,168,120,.4);pointer-events:none;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="filosofia" aria-labelledby="filosofia-titulo" style="padding-block:clamp(4.5rem,10vw,9rem);">
+      <div style="max-width:1180px;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,4rem);">
+        <header style="margin-bottom:clamp(3rem,6vw,5rem);max-width:40rem;">
+          <p style="font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:#8A5E44;margin:0 0 1.25rem;">La atención</p>
+          <h2 id="filosofia-titulo" style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:-.015em;font-size:clamp(2.1rem,1.4rem + 3.2vw,3.9rem);margin:0;">Lo que cuidamos antes de cualquier tratamiento</h2>
+        </header>
+
+        <ul style="list-style:none;margin:0;padding:0;display:grid;gap:clamp(2.5rem,4vw,3.5rem);grid-template-columns:repeat(auto-fit,minmax(255px,1fr));">
+          <li style="position:relative;padding-top:2.25rem;border-top:1px solid #E4D7C8;">
+            <span aria-hidden="true" style="position:absolute;top:-.75rem;left:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:.95rem;letter-spacing:.1em;color:#8A5E44;background:#FDFBF8;padding-right:.75rem;">01</span>
+            <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(1.35rem,1.2rem + .6vw,1.7rem);margin:0 0 .6rem;">Privacidad</h3>
+            <p style="color:#5A4E47;font-size:.98rem;margin:0;">Tu consulta es tuya. Cuidamos la discreción en cada paso, desde el primer mensaje hasta la salida.</p>
+          </li>
+          <li style="position:relative;padding-top:2.25rem;border-top:1px solid #E4D7C8;">
+            <span aria-hidden="true" style="position:absolute;top:-.75rem;left:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:.95rem;letter-spacing:.1em;color:#8A5E44;background:#FDFBF8;padding-right:.75rem;">02</span>
+            <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(1.35rem,1.2rem + .6vw,1.7rem);margin:0 0 .6rem;">Protocolo</h3>
+            <p style="color:#5A4E47;font-size:.98rem;margin:0;">Higiene, materiales y procedimientos siguen protocolos profesionales. Sin improvisación.</p>
+          </li>
+          <li style="position:relative;padding-top:2.25rem;border-top:1px solid #E4D7C8;">
+            <span aria-hidden="true" style="position:absolute;top:-.75rem;left:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:.95rem;letter-spacing:.1em;color:#8A5E44;background:#FDFBF8;padding-right:.75rem;">03</span>
+            <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(1.35rem,1.2rem + .6vw,1.7rem);margin:0 0 .6rem;">Criterio</h3>
+            <p style="color:#5A4E47;font-size:.98rem;margin:0;">Cada caso se evalúa antes de proponer algo. Si un tratamiento no corresponde, te lo decimos.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="tratamientos" aria-labelledby="tratamientos-titulo" style="padding-block:clamp(4.5rem,10vw,9rem);background:#F8F2EA;">
+      <div style="max-width:1180px;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,4rem);">
+        <header style="margin-bottom:clamp(3rem,6vw,5rem);display:grid;gap:2.5rem;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:end;">
+          <div>
+            <p style="font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:#8A5E44;margin:0 0 1.25rem;">Tratamientos</p>
+            <h2 id="tratamientos-titulo" style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:-.015em;font-size:clamp(2.1rem,1.4rem + 3.2vw,3.9rem);margin:0;">Cuidados que <em style="font-style:italic;color:#8A5E44;">acompañan</em>,<br/>no que prometen</h2>
+          </div>
+          <p style="color:#5A4E47;font-size:.98rem;margin:0;">Todo empieza por una evaluación. Ahí se define si el tratamiento corresponde a tu caso y cómo sería el proceso.</p>
+        </header>
+
+        <div style="display:grid;gap:clamp(1.75rem,3vw,2.5rem);grid-template-columns:repeat(auto-fit,minmax(275px,1fr));">
+          <article style="background:#FDFBF8;border:1px solid #F0E7DC;overflow:hidden;">
+            <div style="aspect-ratio:4/3;position:relative;overflow:hidden;">
+              <image-slot id="card-aclarado" shape="rect" src="assets/images/tratamiento-aclarado.jpg" fit="cover" placeholder="Still life simbólico — aclarado íntimo"></image-slot>
+            </div>
+            <div style="padding:clamp(1.5rem,3vw,2.15rem);">
+              <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(1.35rem,1.2rem + .6vw,1.7rem);margin:0 0 .6rem;">Aclarado íntimo</h3>
+              <p style="color:#5A4E47;font-size:.96rem;margin:0;">Un cuidado delicado, realizado con protocolo clínico y total privacidad. Se evalúa caso por caso.</p>
+            </div>
+          </article>
+          <article style="background:#FDFBF8;border:1px solid #F0E7DC;overflow:hidden;">
+            <div style="aspect-ratio:4/3;position:relative;overflow:hidden;">
+              <image-slot id="card-laser" shape="rect" src="assets/images/tratamiento-laser.jpg" fit="cover" placeholder="Still life simbólico — depilación láser"></image-slot>
+            </div>
+            <div style="padding:clamp(1.5rem,3vw,2.15rem);">
+              <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(1.35rem,1.2rem + .6vw,1.7rem);margin:0 0 .6rem;">Depilación láser</h3>
+              <p style="color:#5A4E47;font-size:.96rem;margin:0;">Zona íntima y otras zonas. En la evaluación definimos el plan de sesiones adecuado para tu piel.</p>
+            </div>
+          </article>
+          <article style="background:#FDFBF8;border:1px solid #F0E7DC;overflow:hidden;">
+            <div style="aspect-ratio:4/3;position:relative;overflow:hidden;">
+              <image-slot id="card-otros" shape="rect" src="assets/images/tratamiento-otros.jpg" fit="cover" placeholder="Still life simbólico — otros cuidados"></image-slot>
+            </div>
+            <div style="padding:clamp(1.5rem,3vw,2.15rem);">
+              <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(1.35rem,1.2rem + .6vw,1.7rem);margin:0 0 .6rem;">Otros cuidados</h3>
+              <p style="color:#5A4E47;font-size:.96rem;margin:0;">Contanos qué te gustaría trabajar. Te orientamos con criterio profesional, sin apurarte.</p>
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top:clamp(3rem,5vw,4rem);">
+          <a href="https://wa.me/595982879555?text=Hola%2C%20quisiera%20agendar%20una%20evaluaci%C3%B3n." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;padding:.95rem 1.9rem;font-family:'Karla',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#2E2622;border:1px solid #E4D7C8;border-radius:999px;">Consultá por tu caso</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="clinica" aria-labelledby="clinica-titulo" style="padding-block:clamp(4.5rem,10vw,9rem);">
+      <div style="max-width:1180px;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,4rem);display:grid;gap:clamp(2.5rem,6vw,5rem);grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center;">
+        <div style="aspect-ratio:4/5;overflow:hidden;border:1px solid #E4D7C8;position:relative;max-width:420px;">
+          <image-slot id="clinica-foto" shape="rect" src="assets/images/clinica-ambiente.jpg" fit="cover" placeholder="Espacio de atención — sin retrato inventado"></image-slot>
+          <div aria-hidden="true" style="position:absolute;inset:.75rem;border:1px solid rgba(194,168,120,.45);pointer-events:none;"></div>
+        </div>
+
+        <div>
+          <p style="font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:#8A5E44;margin:0 0 1.25rem;">La clínica</p>
+          <h2 id="clinica-titulo" style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:-.015em;font-size:clamp(2.1rem,1.4rem + 3.2vw,3.9rem);margin:0;">Detrás de <em style="font-style:italic;color:#8A5E44;">MED</em></h2>
+          <div aria-hidden="true" style="width:3.5rem;height:1px;background:linear-gradient(90deg,#C2A878,rgba(194,168,120,0));margin:1.75rem 0 1.9rem;"></div>
+          <p style="margin:0 0 1.15em;max-width:62ch;">MED DermoEstética nace de una idea simple: que un tratamiento estético se pueda hacer con la misma seriedad con la que se hace cualquier consulta profesional.</p>
+          <p style="margin:0 0 1.15em;"><span style="color:#6B5F58;font-style:italic;">[Dra. Rocío — formación y trayectoria]</span></p>
+          <dl style="margin:2.5rem 0 0;padding:0;display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));">
+            <div style="border-top:1px solid #E4D7C8;padding-top:.9rem;">
+              <dt style="font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#6B5F58;margin-bottom:.4rem;">Registro profesional</dt>
+              <dd style="margin:0;font-size:.95rem;"><span style="color:#6B5F58;font-style:italic;">[Nº de registro]</span></dd>
+            </div>
+            <div style="border-top:1px solid #E4D7C8;padding-top:.9rem;">
+              <dt style="font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#6B5F58;margin-bottom:.4rem;">Atención</dt>
+              <dd style="margin:0;font-size:.95rem;">Con horario agendado, para cuidar tu privacidad</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="preguntas" aria-labelledby="preguntas-titulo" style="padding-block:clamp(4.5rem,10vw,9rem);background:#F8F2EA;">
+      <div style="max-width:780px;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,4rem);">
+        <header style="margin-bottom:clamp(3rem,6vw,5rem);max-width:40rem;">
+          <p style="font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:#8A5E44;margin:0 0 1.25rem;">Preguntas frecuentes</p>
+          <h2 id="preguntas-titulo" style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:-.015em;font-size:clamp(2.1rem,1.4rem + 3.2vw,3.9rem);margin:0;">Lo que solés querer saber antes</h2>
+        </header>
+
+        <div style="border-top:1px solid #E4D7C8;">
+          <details style="border-bottom:1px solid #E4D7C8;">
+            <summary style="cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding:1.5rem 0;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.2rem,1.05rem + .5vw,1.5rem);color:#2E2622;">¿Es discreto?<span aria-hidden="true" style="position:relative;width:.85rem;height:.85rem;flex:none;"><span style="position:absolute;left:0;right:0;top:50%;height:1px;background:#8A5E44;"></span><span class="faq-vert" style="position:absolute;top:0;bottom:0;left:50%;width:1px;background:#8A5E44;transition:transform 450ms cubic-bezier(.22,.61,.36,1);"></span></span></summary>
+            <div style="padding:0 1rem 1.75rem 0;color:#5A4E47;"><p style="margin:0;">Totalmente. Cuidamos tu privacidad en cada paso, y la atención es con horario agendado.</p></div>
+          </details>
+          <details style="border-bottom:1px solid #E4D7C8;">
+            <summary style="cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding:1.5rem 0;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.2rem,1.05rem + .5vw,1.5rem);color:#2E2622;">¿Es seguro e higiénico?<span aria-hidden="true" style="position:relative;width:.85rem;height:.85rem;flex:none;"><span style="position:absolute;left:0;right:0;top:50%;height:1px;background:#8A5E44;"></span><span class="faq-vert" style="position:absolute;top:0;bottom:0;left:50%;width:1px;background:#8A5E44;transition:transform 450ms cubic-bezier(.22,.61,.36,1);"></span></span></summary>
+            <div style="padding:0 1rem 1.75rem 0;color:#5A4E47;"><p style="margin:0;">Trabajamos con protocolos profesionales de higiene y seguridad en cada procedimiento.</p></div>
+          </details>
+          <details style="border-bottom:1px solid #E4D7C8;">
+            <summary style="cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding:1.5rem 0;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.2rem,1.05rem + .5vw,1.5rem);color:#2E2622;">¿Duele?<span aria-hidden="true" style="position:relative;width:.85rem;height:.85rem;flex:none;"><span style="position:absolute;left:0;right:0;top:50%;height:1px;background:#8A5E44;"></span><span class="faq-vert" style="position:absolute;top:0;bottom:0;left:50%;width:1px;background:#8A5E44;transition:transform 450ms cubic-bezier(.22,.61,.36,1);"></span></span></summary>
+            <div style="padding:0 1rem 1.75rem 0;color:#5A4E47;"><p style="margin:0;">Es un procedimiento cuidado. En la evaluación te explicamos qué vas a sentir según tu caso, sin adelantar nada que no podamos sostener.</p></div>
+          </details>
+          <details style="border-bottom:1px solid #E4D7C8;">
+            <summary style="cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding:1.5rem 0;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.2rem,1.05rem + .5vw,1.5rem);color:#2E2622;">¿Cuánto sale?<span aria-hidden="true" style="position:relative;width:.85rem;height:.85rem;flex:none;"><span style="position:absolute;left:0;right:0;top:50%;height:1px;background:#8A5E44;"></span><span class="faq-vert" style="position:absolute;top:0;bottom:0;left:50%;width:1px;background:#8A5E44;transition:transform 450ms cubic-bezier(.22,.61,.36,1);"></span></span></summary>
+            <div style="padding:0 1rem 1.75rem 0;color:#5A4E47;"><p style="margin:0;">Cada caso es distinto. En la evaluación vemos qué corresponde y te pasamos los valores, sin compromiso.</p></div>
+          </details>
+          <details style="border-bottom:1px solid #E4D7C8;">
+            <summary style="cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding:1.5rem 0;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.2rem,1.05rem + .5vw,1.5rem);color:#2E2622;">¿Cómo agendo?<span aria-hidden="true" style="position:relative;width:.85rem;height:.85rem;flex:none;"><span style="position:absolute;left:0;right:0;top:50%;height:1px;background:#8A5E44;"></span><span class="faq-vert" style="position:absolute;top:0;bottom:0;left:50%;width:1px;background:#8A5E44;transition:transform 450ms cubic-bezier(.22,.61,.36,1);"></span></span></summary>
+            <div style="padding:0 1rem 1.75rem 0;color:#5A4E47;"><p style="margin:0;">Escribinos al WhatsApp y coordinamos un horario. No hace falta que cuentes detalles por mensaje si no querés.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" aria-labelledby="contacto-titulo" style="padding-block:clamp(4.5rem,10vw,9rem);background:#241D1A;color:#F0E7DC;text-align:center;">
+      <div style="max-width:780px;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,4rem);">
+        <p style="font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:#C2A878;margin:0 0 1.25rem;">Contacto</p>
+        <h2 id="contacto-titulo" style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:-.015em;font-size:clamp(2.1rem,1.4rem + 3.2vw,3.9rem);margin:0;color:#FDFBF8;">Cuando quieras,<br/>estamos <em style="font-style:italic;color:#C2A878;">para ayudarte</em></h2>
+        <div aria-hidden="true" style="width:5rem;height:1px;margin:1.75rem auto 1.9rem;background:linear-gradient(90deg,rgba(194,168,120,0),#C2A878,rgba(194,168,120,0));"></div>
+        <p style="color:rgba(240,231,220,.75);font-size:1.1rem;max-width:46ch;margin:0 auto 1.15em;">Escribinos y coordinamos tu evaluación. Sin apuro y sin compromiso.</p>
+
+        <div style="margin-top:2.5rem;">
+          <a href="https://wa.me/595982879555?text=Hola%2C%20quisiera%20agendar%20una%20evaluaci%C3%B3n." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:1.15rem 2.5rem;font-family:'Karla',sans-serif;font-size:.82rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#241D1A;background:#C2A878;border-radius:999px;">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2A9.9 9.9 0 0 0 2.1 11.9c0 1.75.46 3.45 1.34 4.95L2 22l5.3-1.39a9.9 9.9 0 0 0 4.74 1.21h.01a9.9 9.9 0 0 0 9.9-9.9A9.9 9.9 0 0 0 12.04 2Zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.07-1.82-.11-.42-.11-.96-.29-1.65-.59-2.9-1.25-4.8-4.17-4.94-4.37-.15-.2-1.19-1.58-1.19-3.02 0-1.43.75-2.14 1.02-2.43.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.59.83 2.02.9 2.17.07.15.12.32.02.51-.1.2-.15.32-.29.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.3 2.35 1.45.29.15.46.12.63-.07.17-.2.73-.85.92-1.14.2-.29.39-.24.66-.15.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.12.07.68-.17 1.34Z"/></svg>
+            Escribinos al WhatsApp
+          </a>
+        </div>
+
+        <ul style="list-style:none;margin:clamp(3.5rem,6vw,5rem) 0 0;padding:0;display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));text-align:left;">
+          <li style="border-top:1px solid rgba(240,231,220,.18);padding-top:1rem;font-size:.95rem;">
+            <span style="display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#C2A878;margin-bottom:.45rem;">WhatsApp</span>
+            <a href="https://wa.me/595982879555?text=Hola%2C%20quisiera%20agendar%20una%20evaluaci%C3%B3n." target="_blank" rel="noopener" style="color:#F0E7DC;text-decoration-color:rgba(194,168,120,.55);text-underline-offset:.25em;">+595 982 879 555</a>
+          </li>
+          <li style="border-top:1px solid rgba(240,231,220,.18);padding-top:1rem;font-size:.95rem;">
+            <span style="display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#C2A878;margin-bottom:.45rem;">Dirección</span>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Med+DermoEstetica+Av+Las+Tortolas+Km+4+Ciudad+del+Este+Paraguay" target="_blank" rel="noopener" style="color:#F0E7DC;text-decoration-color:rgba(194,168,120,.55);text-underline-offset:.25em;">Av. Las Tórtolas, km 4 · Ciudad del Este</a>
+          </li>
+          <li style="border-top:1px solid rgba(240,231,220,.18);padding-top:1rem;font-size:.95rem;">
+            <span style="display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#C2A878;margin-bottom:.45rem;">Atención</span>
+            <span>Con cita previa · Confirmá disponibilidad por WhatsApp</span>
+          </li>
+          <li style="border-top:1px solid rgba(240,231,220,.18);padding-top:1rem;font-size:.95rem;">
+            <span style="display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#C2A878;margin-bottom:.45rem;">Instagram</span>
+            <a href="https://www.instagram.com/meddermoestetica/" target="_blank" rel="noopener" style="color:#F0E7DC;text-decoration-color:rgba(194,168,120,.55);text-underline-offset:.25em;">@meddermoestetica</a>
+          </li>
+          <li style="border-top:1px solid rgba(240,231,220,.18);padding-top:1rem;font-size:.95rem;">
+            <span style="display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#C2A878;margin-bottom:.45rem;">Facebook</span>
+            <span>Med DermoEstética</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="background:#F8F2EA;padding-block:clamp(3rem,5vw,4.5rem);border-top:1px solid #F0E7DC;">
+    <div style="max-width:1180px;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,4rem);display:grid;gap:1.75rem;">
+      <div style="display:flex;align-items:baseline;gap:.5rem;">
+        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.3rem;letter-spacing:.08em;">MED</span>
+        <span style="font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:#6B5F58;">DermoEstética</span>
+      </div>
+      <p style="font-size:.82rem;line-height:1.7;color:#6B5F58;max-width:68ch;margin:0;">Los tratamientos estéticos requieren evaluación profesional previa. Los resultados varían según cada persona y ningún resultado puede garantizarse. Este sitio tiene carácter informativo y no sustituye una consulta profesional.</p>
+      <nav aria-label="Enlaces legales" style="display:flex;gap:.6rem;align-items:center;">
+        <a href="Legal.dc.html" style="font-size:.82rem;color:#5A4E47;text-underline-offset:.25em;">Aviso legal y privacidad</a>
+        <span aria-hidden="true" style="color:#6B5F58;">·</span>
+        <a href="https://www.instagram.com/meddermoestetica/" target="_blank" rel="noopener" style="font-size:.82rem;color:#5A4E47;text-underline-offset:.25em;">Instagram</a>
+      </nav>
+      <p style="font-size:.78rem;color:#6B5F58;margin:0;">© 2026 MED DermoEstética · Reg. prof. <span style="font-style:italic;">[pendiente]</span></p>
+    </div>
+  </footer>
+
+  <sc-if value="{{ waVisible }}" hint-placeholder-val="{{ false }}">
+    <a href="https://wa.me/595982879555?text=Hola%2C%20quisiera%20agendar%20una%20evaluaci%C3%B3n." target="_blank" rel="noopener" aria-label="Escribinos al WhatsApp" style="position:fixed;right:clamp(1rem,3vw,2rem);bottom:clamp(1rem,3vw,2rem);z-index:600;width:3.25rem;height:3.25rem;display:grid;place-items:center;color:#FDFBF8;background:#8A5E44;border-radius:50%;box-shadow:0 12px 30px -12px rgba(46,38,34,.55);">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2A9.9 9.9 0 0 0 2.1 11.9c0 1.75.46 3.45 1.34 4.95L2 22l5.3-1.39a9.9 9.9 0 0 0 4.74 1.21h.01a9.9 9.9 0 0 0 9.9-9.9A9.9 9.9 0 0 0 12.04 2Zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.07-1.82-.11-.42-.11-.96-.29-1.65-.59-2.9-1.25-4.8-4.17-4.94-4.37-.15-.2-1.19-1.58-1.19-3.02 0-1.43.75-2.14 1.02-2.43.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.59.83 2.02.9 2.17.07.15.12.32.02.51-.1.2-.15.32-.29.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.3 2.35 1.45.29.15.46.12.63-.07.17-.2.73-.85.92-1.14.2-.29.39-.24.66-.15.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.12.07.68-.17 1.34Z"/></svg>
+    </a>
+  </sc-if>
+
+  <aside aria-label="Versión de prueba, datos en revisión" style="position:fixed;left:clamp(1rem,3vw,2rem);bottom:clamp(1rem,3vw,2rem);z-index:650;display:flex;flex-direction:column;gap:.1rem;padding:.65rem .9rem;color:#F8F2EA;background:rgba(36,29,26,.92);border:1px solid rgba(194,168,120,.55);border-radius:.35rem;box-shadow:0 12px 30px -18px rgba(36,29,26,.65);pointer-events:none;">
+    <strong style="font-family:'Karla',sans-serif;text-transform:uppercase;color:#C2A878;font-size:.62rem;letter-spacing:.16em;">Versión de prueba</strong>
+    <span style="font-family:'Karla',sans-serif;text-transform:uppercase;font-size:.56rem;letter-spacing:.11em;opacity:.78;">Datos en revisión</span>
+  </aside>
+
+  <sc-if value="{{ showPending }}" hint-placeholder-val="{{ false }}">
+    <aside style="position:fixed;top:5.5rem;right:1rem;z-index:650;max-width:260px;padding:.85rem 1rem;font-size:.72rem;line-height:1.5;color:#F8F2EA;background:rgba(36,29,26,.92);border:1px solid rgba(194,168,120,.55);border-radius:.35rem;">
+      Modo revisión: los espacios de imagen y los datos entre [corchetes] siguen pendientes de aprobación de la clínica — registro profesional, biografía y fotos reales.
+    </aside>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showPendingLabels&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Revisión&quot;}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { menuOpen: false, isMobile: false, waVisible: false };
+    this.onResize = this.onResize.bind(this);
+    this.onScroll = this.onScroll.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.onResize();
+    this.onScroll();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('scroll', this.onScroll);
+  }
+
+  onResize() {
+    this.setState({ isMobile: window.innerWidth <= 980 });
+  }
+
+  onScroll() {
+    this.setState({ waVisible: window.scrollY > 500 });
+  }
+
+  toggleMenu() {
+    this.setState(function (s) { return { menuOpen: !s.menuOpen }; });
+  }
+
+  closeMenu() {
+    this.setState({ menuOpen: false });
+  }
+
+  renderVals() {
+    return {
+      menuOpen: this.state.menuOpen && this.state.isMobile,
+      isMobile: this.state.isMobile,
+      isDesktop: !this.state.isMobile,
+      waVisible: this.state.waVisible,
+      toggleMenu: this.toggleMenu,
+      closeMenu: this.closeMenu,
+      showPending: this.props.showPendingLabels === true
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+dist/
+node_modules/
+artifacts/
+*.tar.gz
+.env
+.DS_Store
+Thumbs.db
