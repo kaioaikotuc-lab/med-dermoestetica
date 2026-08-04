@@ -27,12 +27,18 @@ Origem e licença de cada imagem: `ASSET_MANIFEST.md`.
 
 ## Pendente antes de publicar de verdade
 
-1. **Revisão das imagens com a Dra. Rocío** — as 7 fotos são de banco
-   (licenciadas), não da clínica. Duas merecem uma segunda olhada dela,
-   detalhadas no `ASSET_MANIFEST.md`. Trocar por fotos próprias continua sendo
-   o melhor caminho quando houver.
-2. **Foto real da recepção** — existe no projeto do Claude Design mas não foi
-   possível baixá-la; a seção "La clínica" segue com a foto de ambiente.
+1. ~~**Revisão das imagens com a Dra. Rocío**~~ — **resolvido em 04/08.** A
+   clínica autorizou imagem de pessoa real; não há mais nada travado por isso.
+   As 7 fotos são de banco licenciado e podem ficar. Trocar por fotos próprias
+   da clínica continua sendo o melhor caminho quando houver, mas é melhoria,
+   não bloqueio. Ver `ASSET_MANIFEST.md`.
+2. **Foto real da recepção** — o arquivo `clinica-recepcion.png` está no projeto
+   do Claude Design e não foi possível baixá-lo por lá (passa do limite de
+   leitura da API). Não está no Creative Cloud do Kaio — conferido em 04/08.
+   Caminho mais curto: o Kaio salvar o arquivo em
+   `assets/images/clinica-recepcion.png` e ajustar a substituição em
+   `med-dermoestetica-claude-prototype/scripts/convert-design-upgrade.mjs`.
+   Enquanto isso a seção "La clínica" segue com a foto de ambiente.
 3. Número de registro profissional e razão social — hoje marcados como
    "a completar antes de la publicación" no aviso legal. Não podem ser
    inventados.
