@@ -10,18 +10,16 @@ prueba" — é um endereço de revisão, não o lançamento.
 
 ## De onde vem este HTML
 
-`index.html` é **gerado**, não editado à mão. A fonte é o projeto do Claude
-Design, exportado como `.dc.html` e convertido por:
+Desde 25/10/2026 o `index.html` é a **proposta A "Clínica"**, escolhida pelo Kaio,
+e passa a ser **editado à mão** (HTML + CSS inline, sem build). Fonte da
+montagem: `Workspace\output\meddermo\propuestas-2026-10-06ersiones\clinica`.
+O conversor `.dc.html` (repo `med-dermoestetica-claude-prototype`) e `source/`
+ficam como histórico da versão anterior; `assets/med.js`, `styles.css`,
+`main.js` e `site-config.js` não são mais carregados. `legal.html` segue o da
+versão anterior.
 
-    cd ../med-dermoestetica-claude-prototype
-    node scripts/convert-design-upgrade.mjs <caminho-deste-repo>
-
-`legal.html` e `assets/med.js` acompanham o mesmo desenho. Editar `index.html`
-diretamente faz o próximo export sobrescrever a mudança — mexa no Claude
-Design, ou no conversor.
-
-Os arquivos `assets/styles.css`, `assets/main.js` e `assets/site-config.js`
-são da versão anterior do site e não são mais carregados por nenhuma página.
+Sem foto de equipe e sem credenciais da Dra. no ar: só entram com original em
+alta e autorização.
 
 Origem e licença de cada imagem: `ASSET_MANIFEST.md`.
 

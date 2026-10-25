@@ -76,3 +76,9 @@ de leitura da API do projeto e não pôde ser baixado; a seção segue com
 `clinica-ambiente.jpg`. Para trocar: salvar a foto em
 `assets/images/clinica-recepcion.png` e ajustar a substituição em
 `med-dermoestetica-claude-prototype/scripts/convert-design-upgrade.mjs`.
+
+## 2026-10-25 — fotos da clínica (proposta A)
+
+- `assets/images/clinica-recepcion.jpg` e `clinica-fachada.jpg`: Google Maps,
+  perfil "Med DermoEstetica" (fotos da própria clínica). Sem pessoas
+  identificáveis. Trocar pelos originais da clínica quando houver.
