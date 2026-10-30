@@ -84,3 +84,5 @@ de leitura da API do projeto e não pôde ser baixado; a seção segue com
   identificáveis. Trocar pelos originais da clínica quando houver.
 
 - 2026-10-30: clinica-fachada.jpg e clinica-recepcion.jpg atualizadas da reconstrucao 23/10 (fotos originais da clinica); clinica-detalle-logo.jpg adicionada na galeria (substitui recepcao duplicada).
+
+- 2026-10-30 (v2): `clinica-recepcion-ancha-1600.jpg` (+ `clinica-recepcion-ancha-900.webp` e `-1600.webp`): foto original da recepção, mesma origem das acima (reconstrução 23/10), usada na seção "Así es la clínica". Os demais `*.webp` são variantes responsivas (redimensionadas, WebP 78) das imagens já registradas neste arquivo, com a mesma origem e licença.

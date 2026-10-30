@@ -12,11 +12,15 @@ prueba" — é um endereço de revisão, não o lançamento.
 
 Desde 25/10/2026 o `index.html` é a **proposta A "Clínica"**, escolhida pelo Kaio,
 e passa a ser **editado à mão** (HTML + CSS inline, sem build). Fonte da
-montagem: `Workspace\output\meddermo\propuestas-2026-10-06ersiones\clinica`.
+montagem: `Workspace\output\meddermo\propuestas-2026-10-06\versiones\clinica`.
 O conversor `.dc.html` (repo `med-dermoestetica-claude-prototype`) e `source/`
 ficam como histórico da versão anterior; `assets/med.js`, `styles.css`,
 `main.js` e `site-config.js` não são mais carregados. `legal.html` segue o da
 versão anterior.
+
+Em 30/10/2026 entrou a **v2** da proposta A, ainda editada à mão: hero em camadas,
+seção "Así es la clínica" com a foto real da recepção, fechamento com um só botão e
+imagens WebP responsivas (o JPEG fica de reserva).
 
 Sem foto de equipe e sem credenciais da Dra. no ar: só entram com original em
 alta e autorização.
