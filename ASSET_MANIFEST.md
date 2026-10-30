@@ -82,3 +82,5 @@ de leitura da API do projeto e não pôde ser baixado; a seção segue com
 - `assets/images/clinica-recepcion.jpg` e `clinica-fachada.jpg`: Google Maps,
   perfil "Med DermoEstetica" (fotos da própria clínica). Sem pessoas
   identificáveis. Trocar pelos originais da clínica quando houver.
+
+- 2026-10-30: clinica-fachada.jpg e clinica-recepcion.jpg atualizadas da reconstrucao 23/10 (fotos originais da clinica); clinica-detalle-logo.jpg adicionada na galeria (substitui recepcao duplicada).
