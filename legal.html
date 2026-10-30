@@ -2,77 +2,143 @@
 <html lang="es-PY">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aviso legal y privacidad — MEÐ DermoEstética</title>
-<meta name="description" content="Aviso legal y política de privacidad de MEÐ DermoEstética.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aviso legal y privacidad · Med DermoEstética</title>
+<meta name="description" content="Aviso legal y política de privacidad de Med DermoEstética, Ciudad del Este.">
 <meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#FDFBF8">
+<meta name="darkreader-lock">
+<meta name="color-scheme" content="only light">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/karla-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:300 700;font-display:swap;src:url("assets/fonts/cormorant-garamond-latin.woff2") format("woff2");}
-@font-face{font-family:"Karla";font-style:normal;font-weight:300 700;font-display:swap;src:url("assets/fonts/karla-latin.woff2") format("woff2");}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:300 700;font-display:swap;src:url("assets/fonts/cormorant-garamond-latin.woff2") format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:300 700;font-display:swap;src:url("assets/fonts/cormorant-garamond-italic-latin.woff2") format("woff2")}
+@font-face{font-family:"Karla";font-style:normal;font-weight:300 700;font-display:swap;src:url("assets/fonts/karla-latin.woff2") format("woff2")}
+
+:root{
+  --papel:#FDFBF8; --crema:#F8F2EA; --linea:#E4D7C8;
+  --tinta:#241D1A; --noche:#1B1513; --texto:#2E2622; --suave:#51453E; --tenue:#62564F;
+  --cobre:#8A5E44; --oro:#C2A878;
+  --serif:"Cormorant Garamond",Georgia,serif;
+  --sans:"Karla",-apple-system,"Segoe UI",system-ui,sans-serif;
+  --lado:clamp(1.15rem,5vw,3rem);
+  --ease:cubic-bezier(.23,1,.32,1);
+}
 *{box-sizing:border-box}
-body{margin:0;overflow-x:hidden;background:#FDFBF8}
-:focus-visible{outline:2px solid #8A5E44;outline-offset:3px}
-.med-volver:hover{border-color:#8A5E44;color:#8A5E44}
+:root{color-scheme:only light}
+html{-webkit-text-size-adjust:100%;scrollbar-color:var(--linea) var(--papel);accent-color:var(--cobre);caret-color:var(--cobre)}
+body{margin:0;background:var(--papel);color:var(--texto);font:400 17px/1.7 var(--sans);overflow-x:clip}
+a{color:inherit;text-underline-offset:.3em;text-decoration-thickness:1px}
+::selection{background:var(--linea);color:var(--tinta)}
+:focus-visible{outline:2px solid var(--cobre);outline-offset:3px}
+.salto{position:absolute;left:-9999px;top:0;z-index:999;background:var(--tinta);color:var(--papel);padding:.75rem 1.25rem}
+.salto:focus{left:1rem;top:1rem}
+.contenedor{max-width:1200px;margin-inline:auto;padding-inline:var(--lado)}
+
+.prueba{background:var(--tinta);color:var(--linea);padding:.45rem var(--lado);font-size:.72rem;letter-spacing:.04em;text-align:center}
+.prueba strong{font-weight:600;color:var(--oro);text-transform:uppercase;letter-spacing:.14em;margin-right:.6rem}
+.cabecera{position:sticky;top:0;z-index:50;background:rgba(253,251,248,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(46,38,34,.08)}
+.cabecera .contenedor{display:flex;align-items:center;gap:1rem;padding-block:.9rem}
+.marca{display:flex;flex-direction:column;justify-content:center;min-height:2.75rem;line-height:1;text-decoration:none;margin-right:auto}
+.marca b{font-family:var(--serif);font-weight:400;font-size:1.6rem;letter-spacing:.06em;color:var(--cobre)}
+.marca span{font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--tenue);margin-top:.3rem}
+.volver{display:inline-flex;align-items:center;justify-content:center;min-height:2.75rem;padding:.6rem 1.3rem;font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;white-space:nowrap;color:var(--texto);border:1px solid var(--linea);border-radius:999px;transition:background-color .16s var(--ease),color .16s var(--ease),border-color .16s var(--ease),transform .16s var(--ease)}
+.volver:active{transform:translateY(1px) scale(.98)}
+@media (hover:hover) and (pointer:fine){.volver:hover{background:var(--cobre);border-color:var(--cobre);color:var(--papel)}}
+
+.legal{padding-block:clamp(3.5rem,9vw,7rem) clamp(4rem,9vw,7rem)}
+.legal .contenedor{max-width:calc(46rem + 2 * var(--lado))}
+h1,h2{font-family:var(--serif);font-weight:400;color:var(--tinta);margin:0;text-wrap:balance}
+h1{font-size:clamp(2.4rem,1.5rem + 3.6vw,4.2rem);line-height:1.04;letter-spacing:-.02em}
+h1 em{font-style:italic;color:var(--cobre)}
+.legal .bajada{margin:1.4rem 0 0;color:var(--suave);max-width:52ch;font-size:1.06rem}
+.bloque{margin-top:clamp(2.6rem,5vw,3.4rem);padding-top:clamp(1.6rem,3vw,2rem);border-top:1px solid var(--linea)}
+h2{font-size:clamp(1.55rem,1.35rem + .6vw,1.9rem);line-height:1.15;margin-bottom:.8rem}
+.legal p{margin:0 0 1em;max-width:62ch;text-wrap:pretty}
+.legal p:last-child{margin-bottom:0}
+.legal strong{font-weight:600;color:var(--tinta)}
+.legal .nota{margin-top:1.2rem;font-size:.92rem;color:var(--tenue)}
+.datos{list-style:none;margin:0;padding:0;display:grid;gap:.15rem}
+.datos li{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding:.75rem 0;border-bottom:1px solid var(--linea)}
+.datos li:first-child{border-top:1px solid var(--linea)}
+.datos span{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cobre);padding-top:.3rem}
+.datos a{display:inline-flex;align-items:center;min-height:2.75rem;margin-block:-.6rem;text-decoration:underline;text-decoration-color:rgba(138,94,68,.45)}
+@media (hover:hover) and (pointer:fine){.datos a:hover{color:var(--cobre)}}
+.tel{font-variant-numeric:tabular-nums}
+@media (max-width:520px){.datos li{grid-template-columns:1fr;gap:.1rem}}
+.legal .fecha{margin-top:clamp(2.6rem,5vw,3.4rem);font-size:.85rem;color:var(--tenue)}
+
+.pie{background:var(--noche);color:rgba(240,231,220,.72);padding:2.8rem var(--lado) 3.2rem;font-size:.85rem}
+.pie .contenedor{padding:0;display:grid;gap:1.1rem}
+.pie b{font-family:var(--serif);font-weight:400;font-size:1.4rem;color:var(--papel);letter-spacing:.05em}
+.pie p{margin:0;max-width:70ch}
+.pie a{color:var(--oro);text-decoration:none;display:inline-flex;align-items:center;min-height:2.75rem}
+.pie :focus-visible{outline-color:var(--oro)}
+@media (prefers-reduced-motion:reduce){.volver{transition:none}}
 </style>
 </head>
 <body>
+<a class="salto" href="#contenido">Ir al contenido</a>
+<div class="prueba" role="note"><strong>Versión de prueba</strong>Sitio en revisión, datos por confirmar</div>
 
-<div style="font-family:'Karla',-apple-system,'Segoe UI',system-ui,sans-serif;font-weight:300;color:#2E2622;line-height:1.75;font-size:17px;background:#FDFBF8;max-width:100vw;overflow-x:hidden">
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html" aria-label="Med DermoEstética, inicio"><b>Med</b><span>DermoEstética</span></a>
+    <a class="volver" href="index.html">Volver al inicio</a>
+  </div>
+</header>
 
-  <header style="background:rgba(253,251,248,.92);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(46,38,34,.07)">
-    <div style="max-width:1180px;margin-inline:auto;padding:1rem clamp(1.25rem,5vw,3rem);display:flex;align-items:center;gap:2rem">
-      <a href="index.html" aria-label="MEÐ DermoEstética, inicio" style="display:flex;flex-direction:column;line-height:1;text-decoration:none;margin-right:auto">
-        <span style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;letter-spacing:.1em;color:#8A5E44">MEÐ</span>
-        <span style="font-size:.55rem;letter-spacing:.34em;text-transform:uppercase;color:#6B5F58;margin-top:.3rem">Dermoestética</span>
-      </a>
-      <a class="med-volver" href="index.html" style="display:inline-flex;align-items:center;justify-content:center;padding:.7rem 1.35rem;font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#2E2622;border:1px solid rgba(46,38,34,.16);border-radius:999px;transition:border-color 300ms,color 300ms">Volver al inicio</a>
-    </div>
-  </header>
+<main id="contenido" class="legal">
+  <div class="contenedor">
+    <h1>Aviso legal y <em>privacidad</em></h1>
+    <p class="bajada">Qué es este sitio, qué no promete y qué pasa con tus datos.</p>
 
-  <main style="padding:9rem clamp(1.25rem,5vw,3rem) 6rem">
-    <div style="max-width:780px;margin-inline:auto">
-      <p style="font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:#8A5E44;margin:0 0 1.25rem">Legal</p>
-      <h1 style="font-family:'Cormorant Garamond',serif;font-weight:400;line-height:1.08;letter-spacing:-.015em;font-size:clamp(2.1rem,1.4rem + 3.2vw,3.9rem);margin:0;color:#2E2622">Aviso legal y privacidad</h1>
-      <div aria-hidden="true" style="width:3.5rem;height:1px;background:linear-gradient(90deg,#C2A878,rgba(194,168,120,0));margin:1.9rem 0 1.75rem"></div>
+    <section class="bloque" aria-labelledby="sitio-t">
+      <h2 id="sitio-t">Sobre este sitio</h2>
+      <p>Este sitio pertenece a Med DermoEstética y tiene carácter exclusivamente informativo. Su contenido no constituye una consulta profesional ni reemplaza la evaluación presencial de un profesional habilitado.</p>
+    </section>
 
-      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:1.5rem;margin:3rem 0 .6rem;color:#2E2622">Sobre este sitio</h2>
-      <p style="margin:0 0 1.15em;max-width:62ch">Este sitio pertenece a MEÐ DermoEstética y tiene carácter exclusivamente informativo. Su contenido no constituye una consulta profesional ni reemplaza la evaluación presencial de un profesional habilitado.</p>
+    <section class="bloque" aria-labelledby="tratamientos-t">
+      <h2 id="tratamientos-t">Sobre los tratamientos</h2>
+      <p>Todo tratamiento estético requiere una evaluación previa. Los resultados dependen de las características de cada persona y de su respuesta individual, por lo que <strong>ningún resultado puede garantizarse</strong>. La información publicada describe los cuidados disponibles, no promete efectos determinados.</p>
+    </section>
 
-      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:1.5rem;margin:2.5rem 0 .6rem;color:#2E2622">Sobre los tratamientos</h2>
-      <p style="margin:0 0 1.15em;max-width:62ch">Todo tratamiento estético requiere una evaluación previa. Los resultados dependen de las características de cada persona y de su respuesta individual, por lo que <strong>ningún resultado puede garantizarse</strong>. La información publicada describe los cuidados disponibles, no promete efectos determinados.</p>
+    <section class="bloque" aria-labelledby="datos-t">
+      <h2 id="datos-t">Datos personales</h2>
+      <p>Este sitio <strong>no recolecta, no almacena y no procesa datos personales</strong>. No hay formularios, no se usan cookies de seguimiento ni herramientas de analítica que identifiquen personas.</p>
+      <p>El sitio está alojado en GitHub Pages. Como cualquier servidor, ese servicio puede registrar datos técnicos de la conexión, como la dirección IP, por motivos de seguridad, según sus propias políticas.</p>
+      <p>El contacto se realiza por WhatsApp. Al escribirnos por ese canal, la conversación queda sujeta a las condiciones y políticas de privacidad de WhatsApp, ajenas a este sitio. Lo mismo vale para los enlaces a Instagram y Google Maps. La información que compartas en el chat se trata con confidencialidad profesional.</p>
+    </section>
 
-      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:1.5rem;margin:2.5rem 0 .6rem;color:#2E2622">Datos personales</h2>
-      <p style="margin:0 0 1.15em;max-width:62ch">Este sitio <strong>no recolecta, no almacena y no procesa datos personales</strong>. No hay formularios, no se usan cookies de seguimiento ni herramientas de analítica que identifiquen personas.</p>
-      <p style="margin:0 0 1.15em;max-width:62ch">El contacto se realiza por WhatsApp. Al escribirnos por ese canal, la conversación queda sujeta a las condiciones y políticas de privacidad de WhatsApp, ajenas a este sitio. La información que compartas en ese chat se trata con confidencialidad profesional.</p>
+    <section class="bloque" aria-labelledby="propiedad-t">
+      <h2 id="propiedad-t">Propiedad intelectual</h2>
+      <p>Los textos y elementos visuales propios de este sitio, incluidas las fotos de la clínica, pertenecen a Med DermoEstética. Las imágenes de banco se utilizan bajo licencia y no pueden reproducirse fuera de los usos autorizados.</p>
+    </section>
 
-      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:1.5rem;margin:2.5rem 0 .6rem;color:#2E2622">Propiedad intelectual</h2>
-      <p style="margin:0 0 1.15em;max-width:62ch">Los textos y elementos visuales propios de este sitio pertenecen a MEÐ DermoEstética. Las imágenes de banco se utilizan bajo licencia y no pueden reproducirse fuera de los usos autorizados.</p>
+    <section class="bloque" aria-labelledby="responsable-t">
+      <h2 id="responsable-t">Responsable</h2>
+      <ul class="datos">
+        <li><span>Nombre</span>Med DermoEstética</li>
+        <li><span>Dirección</span>Av. Las Tórtolas, km 4 · Ciudad del Este, Paraguay</li>
+        <li><span>WhatsApp</span><a class="tel" href="https://wa.me/595982879555" target="_blank" rel="noopener">+595 982 879 555</a></li>
+        <li><span>Instagram</span><a href="https://www.instagram.com/meddermoesteticacde/" target="_blank" rel="noopener">@meddermoesteticacde</a></li>
+      </ul>
+      <p class="nota">Razón social y número de registro profesional: a completar antes de la publicación.</p>
+    </section>
 
-      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:1.5rem;margin:2.5rem 0 .6rem;color:#2E2622">Responsable</h2>
-      <p style="margin:0 0 1.15em;max-width:62ch">MEÐ DermoEstética · Av. Las Tórtolas, km 4 · Ciudad del Este, Paraguay · Tel. +595 982 879 555 · Instagram @meddermoesteticacde</p>
-      <p style="margin:0 0 1.15em;max-width:62ch;font-size:.9rem;color:#6B5F58">Razón social y número de registro profesional: a completar antes de la publicación.</p>
+    <p class="fecha">Última actualización: 30 de octubre de 2026</p>
+  </div>
+</main>
 
-      <p style="margin-top:3rem;font-size:.85rem;color:#6B5F58">Última actualización: 28 de julio de 2026</p>
-    </div>
-  </main>
-
-  <footer style="background:#F8F2EA;padding-block:clamp(3rem,5vw,4.5rem);border-top:1px solid #F0E7DC">
-    <div style="max-width:1180px;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3rem)">
-      <div style="display:flex;flex-direction:column;line-height:1;margin-bottom:1rem">
-        <span style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:.1em;color:#8A5E44">MEÐ</span>
-        <span style="font-size:.55rem;letter-spacing:.34em;text-transform:uppercase;color:#6B5F58;margin-top:.3rem">Dermoestética</span>
-      </div>
-      <p style="font-size:.78rem;color:#6B5F58;margin:0">© 2026 MEÐ DermoEstética · Ciudad del Este, Paraguay</p>
-    </div>
-  </footer>
-
-  <aside aria-label="Versión de prueba, datos en revisión" style="position:fixed;left:clamp(1rem,3vw,2rem);bottom:clamp(1rem,3vw,2rem);z-index:650;display:flex;flex-direction:column;gap:.1rem;padding:.65rem .9rem;color:#F8F2EA;background:rgba(36,29,26,.92);border:1px solid rgba(194,168,120,.55);border-radius:.35rem;backdrop-filter:blur(10px);pointer-events:none">
-    <strong style="font-family:'Karla',sans-serif;text-transform:uppercase;color:#C2A878;font-size:.62rem;letter-spacing:.16em">Versión de prueba</strong>
-    <span style="font-family:'Karla',sans-serif;text-transform:uppercase;font-size:.56rem;letter-spacing:.11em;opacity:.78">Datos en revisión</span>
-  </aside>
-
-</div>
-
+<footer class="pie">
+  <div class="contenedor">
+    <b>Med DermoEstética</b>
+    <p>Los tratamientos estéticos requieren evaluación profesional previa. Los resultados varían según cada persona y ningún resultado puede garantizarse. Este sitio tiene carácter informativo y no sustituye una consulta profesional.</p>
+    <p><a href="index.html">Inicio</a> · <a href="https://www.instagram.com/meddermoesteticacde/" target="_blank" rel="noopener">Instagram</a></p>
+    <p>© 2026 Med DermoEstética · Ciudad del Este, Paraguay</p>
+  </div>
+</footer>
 </body>
 </html>
